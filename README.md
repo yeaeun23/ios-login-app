@@ -6,7 +6,7 @@
 
 ## 1. 기능
 
-* 로그인
+* 로그인 (세션 유효시간 O)
 * 웹뷰 : [mobile-web](https://github.com/yeaeun23/mobile-web)
 * Android용 : [android-login-app](https://github.com/yeaeun23/android-login-app)
 
