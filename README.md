@@ -9,7 +9,7 @@
 * 로그인
 * 세션 유효시간 체크
 * 게시판 새글 푸시알림
-* [Android용](https://github.com/yeaeun23/android-login-app)
+* [Android용 로그인 앱](https://github.com/yeaeun23/android-login-app)
 * [웹뷰 컨텐츠](https://github.com/yeaeun23/webview-for-company)
 
 ## 2. 화면 예시
