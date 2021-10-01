@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="mobilesis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HHE-iw-XVq"/>
+                        <viewControllerLayoutGuide type="bottom" id="jKm-Cv-9bC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="zeR-8B-DJg">
+                                <rect key="frame" x="82" y="310" width="250" height="276"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="WXs-0I-kAS">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="104"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="모바일 SIS" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-Hz-hja">
+                                        <rect key="frame" x="152" y="126" width="98" height="40"/>
+                                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-jN-SnN">
+                                        <rect key="frame" x="0.0" y="188" width="250" height="88"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fAZ-bG-0NB">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="88"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사번" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-ZZ-56f">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="34"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="adL-aD-FPz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fT1-Tw-VhO">
+                                                        <rect key="frame" x="0.0" y="54" width="160" height="34"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="4fb-OH-wDe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="tintColor" systemColor="darkTextColor"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLR-8i-2q0">
+                                                <rect key="frame" x="170" y="0.0" width="80" height="88"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="EV2-Y5-6lt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="로그인">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onLoginBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgS-ft-iAV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="MkQ-CO-XIP"/>
+                                    <constraint firstItem="hb6-jN-SnN" firstAttribute="centerX" secondItem="zeR-8B-DJg" secondAttribute="centerX" id="oBv-Fh-Oqq"/>
+                                </constraints>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KvC-C2-0n5">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.84705882352941175" green="0.10588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zeR-8B-DJg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NW1-0W-qCG"/>
+                            <constraint firstItem="zeR-8B-DJg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q7M-0I-5DE"/>
+                            <constraint firstItem="KvC-C2-0n5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qzx-jj-AsP"/>
+                            <constraint firstItem="KvC-C2-0n5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ghw-7d-YN5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KvC-C2-0n5" id="8T0-iL-sq5"/>
+                        <outlet property="id" destination="kfI-ZZ-56f" id="54W-6i-fWT"/>
+                        <outlet property="pw" destination="fT1-Tw-VhO" id="a8L-uE-uog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.88043478260872"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="dcc-N0-KGU">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="Eaf-VB-Pdj" customClass="WebViewController" customModule="mobilesis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FaI-mF-F9N"/>
+                        <viewControllerLayoutGuide type="bottom" id="g2L-Mh-71F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ldX-F7-yyK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76f-Ic-9m9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.204231143" green="0.2854081094" blue="0.36682119969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFw-IW-YeC">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ACd-9w-vnB"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem enabled="NO" title="뒤로가기" id="sFt-on-eKK">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="onBackBtnClicked:" destination="Eaf-VB-Pdj" id="Euy-oE-S1T"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="djn-Vs-ZK8"/>
+                                    <barButtonItem tag="1" title="홈" style="done" id="6uR-MA-9Ao">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="onHomeBtnClicked:" destination="Eaf-VB-Pdj" id="85c-Xa-J4G"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="MOb-XE-SdV"/>
+                                    <barButtonItem tag="2" title="로그아웃" id="VHb-TD-HP4">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="onLogoutBtnClicked:" destination="Eaf-VB-Pdj" id="z9X-RW-Oym"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.204231143" green="0.2854081094" blue="0.36682119969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-Xr-lyT">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.84705882352941175" green="0.10588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.204231143" green="0.2854081094" blue="0.36682119969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="76f-Ic-9m9" secondAttribute="trailing" id="1H7-B2-s6v"/>
+                            <constraint firstItem="ZNs-Xr-lyT" firstAttribute="centerY" secondItem="ldX-F7-yyK" secondAttribute="centerY" id="7ni-i7-0D3"/>
+                            <constraint firstItem="bFw-IW-YeC" firstAttribute="top" secondItem="76f-Ic-9m9" secondAttribute="bottom" id="BfH-Ss-0Ar"/>
+                            <constraint firstItem="76f-Ic-9m9" firstAttribute="leading" secondItem="ldX-F7-yyK" secondAttribute="leading" id="BhR-j6-jkp"/>
+                            <constraint firstItem="bFw-IW-YeC" firstAttribute="leading" secondItem="ldX-F7-yyK" secondAttribute="leading" id="CKU-83-8Fo"/>
+                            <constraint firstItem="g2L-Mh-71F" firstAttribute="top" secondItem="bFw-IW-YeC" secondAttribute="bottom" id="FwC-yg-MoI"/>
+                            <constraint firstAttribute="trailing" secondItem="bFw-IW-YeC" secondAttribute="trailing" id="LeQ-P4-48H"/>
+                            <constraint firstItem="76f-Ic-9m9" firstAttribute="top" secondItem="FaI-mF-F9N" secondAttribute="bottom" id="XBa-Rt-yd8"/>
+                            <constraint firstItem="ZNs-Xr-lyT" firstAttribute="centerX" secondItem="ldX-F7-yyK" secondAttribute="centerX" id="YoX-L1-Ryw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZNs-Xr-lyT" id="6YI-Pa-K7e"/>
+                        <outlet property="backBtn" destination="sFt-on-eKK" id="sU6-5i-qzH"/>
+                        <outlet property="webView" destination="76f-Ic-9m9" id="SzC-WS-bJM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tA3-wY-hgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="logo" width="402" height="104"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
